@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Retracer - Quiz</title>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">		
+		<link href = "css/quiz1.css" rel = "stylesheet">
+		<link href = "css/log.css" rel = "stylesheet">
+		<script src = "js/jquery-1.11.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src = "js/quiz1.js"></script>
+	</head>
+	<body onload="getQuestions()">
+		<div class = "outer">
+			<div class = "User">
+				<h3 id = "score" text-align = 'left' float = 'left'>Score : 0</h3>
+				<h3 id = "timer" text-align = 'right' float = 'right'>20:00</h3>
+				<hr>
+			</div>
+		</div>
+		<div class = 'container'>
+			<h3 id = "questionid">Question 1</h3>
+				<p id = "question"> </p>
+			<hr border-color = 'black'><brq>
+			<form id = 'ans'>
+				<input type = "radio" name = "answer" value = "1" id = "one"><label id = "op1"> Option 1 </label><br><br>
+				<input type = "radio" name = "answer" value = "2" id = "two" ><label id = "op2"> Option 2 </label><br><br>	
+				<input type = "radio" name = "answer" value = "3" id = "three" ><label id = "op3"> Option 3 </label><br><br>	
+				<input type = "radio" name = "answer" value = "4" id = "four" ><label id = "op4"> Option 4 </label><br><br>
+			</form>
+				<div class = "form-group">
+					<br>
+					<div class = "row">
+					<div class = "col-xs-6">
+							<div class = "col-xs-4">
+								<input type = "submit" name = "skip" id = "skip" tabindex = "4" class = "form-control btn btn-skip" value = "Skip">
+							</div>
+						</div>	
+							
+						<div class = "col-xs-6">
+							<div class = "col-xs-4">
+								<input type = "submit" name = "next" id = "next" tabindex = "4" class = "form-control btn btn-next" value = "Next">
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>			
+		<div class = "d1">
+			<div class = "login-form">
+				<input type = "submit" class = "reg"  name = "submit" id = "submit" tabindex = "1" value = "Submit">
+			</div>
+		</div>		
+	</body>
+</html>
